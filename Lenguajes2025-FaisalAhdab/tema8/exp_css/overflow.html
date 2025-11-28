@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Propiedad Overflow</title>
+
+<style>
+    button {
+        padding: 10px 20px;
+        background-color: steelblue;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 15px;
+    }
+    button:hover {
+        background-color: dodgerblue;
+    }
+    .caja {
+        width: 200px;
+        height: 100px;
+        border: 2px solid black;
+        overflow:auto;
+        background-color: lightgray;
+        padding: 10px;
+    }
+</style>
+
+</head>
+<body>
+
+<h1>Propiedad Overflow</h1>
+
+<p>La propiedad <b>overflow</b> controla qué pasa cuando el contenido es más grande que la caja.</p>
+
+<div class="caja">
+    Este texto es muy largo y no cabe dentro de esta caja tan pequeña, así que aparece una barra de desplazamiento gracias a <b>overflow: auto</b>.
+</div>
+
+<p><b>Valores posibles:</b></p>
+<ul>
+    <li><b>visible:</b> el contenido se sale (valor por defecto).</li>
+    <li><b>hidden:</b> el contenido extra se oculta.</li>
+    <li><b>scroll:</b> siempre muestra scroll.</li>
+    <li><b>auto:</b> solo muestra scroll si hace falta.</li>
+</ul>
+<br><br>
+<a href="box-model.html"><button>Volver al Box Model</button></a>
+<a href="box-sizing.html"><button>Ir a Box Sizing</button></a>
+</body>
+</html>

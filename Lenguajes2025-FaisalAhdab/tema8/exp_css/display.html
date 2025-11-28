@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Propiedad Display</title>
+
+<style>
+    button {
+        padding: 10px 20px;
+        background-color: steelblue;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 15px;
+    }
+    button:hover {
+        background-color: dodgerblue;
+    }
+    .bloque {
+        display: block; 
+        background: lightblue;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .inline {
+        display: inline;
+        background: pink;
+        padding: 5px;
+    }
+    .inlineblock {
+        display: inline-block;
+        background: lightgreen;
+        width: 120px;
+        height: 60px;
+        margin: 5px;
+        padding: 5px;
+    }
+</style>
+
+</head>
+<body>
+
+<h1>Propiedad display</h1>
+
+<p>La propiedad <b>display</b> controla cómo se comportan los elementos en el flujo de la página.</p>
+
+<h2>display: block</h2>
+<div class="bloque">Ocupa toda la línea</div>
+
+<h2>display: inline</h2>
+<span class="inline">Elemento 1</span>
+<span class="inline">Elemento 2</span>
+
+<h2>display: inline-block</h2>
+<div class="inlineblock">Caja 1</div>
+<div class="inlineblock">Caja 2</div>
+<br><br>
+<a href="box-model.html"><button>Volver al Box Model</button></a>
+</body>
+</html>

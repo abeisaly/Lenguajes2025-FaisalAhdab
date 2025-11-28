@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Faisal Alahdab">
+    <title>Tablero de Ajadrez</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background: #eee;
+        margin: 0;
+      }
+
+      header {
+        padding: 10px;
+        background: #ddd;
+        font-weight: bold;
+        margin: 2px;
+      }
+
+      footer {
+        padding: 10px;
+        background: #ddd;
+        font-weight: bold;
+        margin: 2px;
+      }
+
+      table {
+        border-collapse: collapse;
+        margin: 0px auto;
+      }
+
+      th {
+        width: 75px;
+        height: 75px;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      td {
+        width: 75px;
+        height: 75px;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      .pequeño {
+        width: 20px;
+        height: 20px;
+      }
+      .clara {
+        background-image: url(images/madera_clara.png);
+        background-size: cover;
+      }
+
+      .oscura {
+        background-image: url(images/madera_oscura.png);
+        background-size: cover;
+      }
+
+      img {
+        width: 45px;
+        height: 60px  ;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>Faisal Alahdab</header>
+    <br>
+    <br>
+    <main>
+      <table>
+        <tr>
+          <th class="pequeño"></th>
+          <th class="pequeño">A</th>
+          <th class="pequeño">B</th>
+          <th class="pequeño">C</th>
+          <th class="pequeño">D</th>
+          <th class="pequeño">E</th>
+          <th class="pequeño">F</th>
+          <th class="pequeño">G</th>
+          <th class="pequeño">H</th>
+        </tr>
+
+        <tr>
+          <th>8</th>
+          <td class="oscura"><img src="images/torre_negra.png"/></td>
+          <td class="clara"><img src="images/caballo_negro.png" /></td>
+          <td class="oscura"><img src="images/alfil_negro.png" /></td>
+          <td class="clara"><img src="images/reina_negra.png" /></td>
+          <td class="oscura"><img src="images/rey_negro.png" /></td>
+          <td class="clara"><img src="images/alfil_negro.png" /></td>
+          <td class="oscura"><img src="images/caballo_negro.png" /></td>
+          <td class="clara"><img src="images/torre_negra.png" /></td>
+        </tr>
+
+        <tr>
+          <th>7</th>
+          <td class="clara"><img src="images/peon_negro.png" /></td>
+          <td class="oscura"><img src="images/peon_negro.png" /></td>
+          <td class="clara"><img src="images/peon_negro.png" /></td>
+          <td class="oscura"><img src="images/peon_negro.png" /></td>
+          <td class="clara"><img src="images/peon_negro.png" /></td>
+          <td class="oscura"><img src="images/peon_negro.png" /></td>
+          <td class="clara"><img src="images/peon_negro.png" /></td>
+          <td class="oscura"><img src="images/peon_negro.png" /></td>
+        </tr>
+
+        <tr>
+          <th>6</th>
+          <td class="oscura"></td>
+          <td class="clara"></td>
+          <td class="oscura"></td>
+          <td class="clara"></td>
+          <td class="oscura"></td>
+          <td class="clara"></td>
+          <td class="oscura"></td>
+          <td class="clara"></td>
+        </tr>
+
+        <tr>
+          <th>5</th>
+          <td class="clara"></td>
+          <td class="oscura"></td>
+          <td class="clara"></td>
+          <td class="oscura"></td>
+          <td class="clara"></td>
+          <td class="oscura"></td>
+          <td class="clara"></td>
+          <td class="oscura"></td>
+        </tr>
+
+        <tr>
+          <th>4</th>
+          <td class="oscura"></td>
+          <td class="clara"></td>
+          <td class="oscura"></td>
+          <td class="clara"></td>
+          <td class="oscura"></td>
+          <td class="clara"></td>
+          <td class="oscura"></td>
+          <td class="clara"></td>
+        </tr>
+
+        <tr>
+          <th>3</th>
+          <td class="clara"></td>
+          <td class="oscura"></td>
+          <td class="clara"></td>
+          <td class="oscura"></td>
+          <td class="clara"></td>
+          <td class="oscura"></td>
+          <td class="clara"></td>
+          <td class="oscura"></td>
+        </tr>
+
+        <tr>
+          <th>2</th>
+          <td class="oscura"><img src="images/peon_blanco.png" /></td>
+          <td class="clara"><img src="images/peon_blanco.png" /></td>
+          <td class="oscura"><img src="images/peon_blanco.png" /></td>
+          <td class="clara"><img src="images/peon_blanco.png" /></td>
+          <td class="oscura"><img src="images/peon_blanco.png" /></td>
+          <td class="clara"><img src="images/peon_blanco.png" /></td>
+          <td class="oscura"><img src="images/peon_blanco.png" /></td>
+          <td class="clara"><img src="images/peon_blanco.png" /></td>
+        </tr>
+
+        <tr>
+          <th>1</th>
+          <td class="clara"><img src="images/torre_blanca.png" /></td>
+          <td class="oscura"><img src="images/caballo_blanco.png" /></td>
+          <td class="clara"><img src="images/alfil_blanco.png" /></td>
+          <td class="oscura"><img src="images/reina_blanca.png" /></td>
+          <td class="clara"><img src="images/rey_blanco.png" /></td>
+          <td class="oscura"><img src="images/alfil_blanco.png" /></td>
+          <td class="clara"><img src="images/caballo_blanco.png" /></td>
+          <td class="oscura"><img src="images/torre_blanca.png" /></td>
+        </tr>
+      </table>
+    </main>
+
+    <br>
+    <br>
+    <footer>Trabajo Ajadrez</footer>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Propiedad Box Sizing</title>
+
+<style>
+    button {
+        padding: 10px 20px;
+        background-color: steelblue;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 15px;
+    }
+    button:hover {
+        background-color: dodgerblue;
+    }
+    .normal {
+        width: 200px;
+        padding: 20px;
+        border: 5px solid blue;
+        background-color: lightgreen;
+        margin-bottom: 20px;
+        box-sizing: content-box;
+    }
+
+    .ajustada {
+        width: 200px;
+        padding: 20px;
+        border: 5px solid red;
+        background-color: lightpink;
+        box-sizing: border-box;
+    }
+</style>
+
+</head>
+<body>
+
+<h1>Propiedad Box-Sizing</h1>
+
+<p>La propiedad <b>box-sizing</b> cambia cómo se calcula el tamaño total de un elemento.</p>
+
+<h3>content-box:</h3>
+<div class="normal">
+    Esta caja usa <b>content-box</b>. Su tamaño final es más grande de lo esperado.
+</div>
+
+<h3>border-box:</h3>
+<div class="ajustada">
+    Esta caja usa <b>border-box</b>. Mantiene el tamaño exacto indicado.
+</div>
+<br><br>
+<a href="box-model.html"><button>Volver al Box Model</button></a>
+<a href="display.html"><button>Ir a Display</button></a>
+</body>
+</html>
